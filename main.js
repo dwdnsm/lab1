@@ -2,7 +2,7 @@ function changeTitle() {
     let newTitle = prompt("What's your name?");
     let titleElement = document.getElementById("title");
 
-    titleElement.innerText = 'Welcome ' + newTitle + ' to the world of RPG'
+    titleElement.innerText = 'Welcome ' + newTitle + ' to the RPG world'
 
 }
 
@@ -28,7 +28,7 @@ switch (classType) {
         break;
 }
 //Player interface
-    let getInterface = document.querySelector(".player");
+    let getInterface = document.querySelector(".interface");
     getInterface.innerHTML = '<img src="img/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType + '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Dexterity: ' + player.dexterity + '</p><p>Intelligence: ' + player.intelligence + '</p></div>';
 },
 setPreFight: function() {
@@ -58,7 +58,7 @@ setFight: function() {
     }
 
     getHeader.innerHTML = '<p>Attack now</p>';
-    getAction.innerHTML = '<a href="#" class="btn-prefight" onclick="PlayerMoves.calcAttack()">Attack!</a>';
+    getAction.innerHTML = '<a href="#" class="btn-prefight">Attack!</a>';
     getEnemy.innerHTML = '<img src="img/enemy.jpg" alt="' + enemy.enemyType + '"class="img-avatar"><div><h3>' + enemy.enemyType + '</h3><p class="health-enemy">Health: ' + enemy.health + '</p><p>Mana: ' + enemy.mana + '</p><p>Strength: ' + enemy.strength + '</p><p>Dexterity: ' + enemy.dexterity + '</p><p>Intelligence: ' + enemy.intelligence + '</p></div>';
 }
 }
@@ -73,6 +73,7 @@ function Player(classType, health, mana, strength, dexterity, intelligence) {
     this.dexterity = dexterity;
     this.intelligence = intelligence;
 }
+
 
 let enemy;
 
