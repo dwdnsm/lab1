@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>David RPG</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
   </head>
   <body>
     <div class="header">
@@ -13,15 +14,15 @@
       <h2>Pick your player</h2>
     </div>
     <div class="player">
-      <a href="#"
-        ><img src="/img/slayer.jpg" alt="slayer" />
+      <a href="#" onclick="GameManager.setGameStart('Slayer')">
+        <img src="/img/slayer.jpg" alt="slayer" />
         <div>
           <h3>Slayer</h3>
           <p>The Slayer is a offense oriented class based around attacks.</p>
         </div>
       </a>
-      <a href="#"
-        ><img src="/img/witch.jpg" alt="witch" />
+      <a href="#" onclick="GameManager.setGameStart('Witch')">
+        <img src="/img/witch.jpg" alt="witch" />
         <div>
           <h3>Witch</h3>
           <p>
@@ -30,8 +31,8 @@
           </p>
         </div>
       </a>
-      <a href="#"
-        ><img src="/img/assassin.jpg" alt="assassin" />
+      <a href="#" onclick="GameManager.setGameStart('Assassin')">
+        <img src="/img/assassin.jpg" alt="assassin" />
         <div>
           <h3>Assassin</h3>
           <p>
@@ -40,8 +41,8 @@
           </p>
         </div>
       </a>
-      <a href="#"
-        ><img src="/img/ranger.jpg" alt="ranger" />
+      <a href="#" onclick="GameManager.setGameStart('Ranger')">
+        <img src="/img/ranger.jpg" alt="ranger" />
         <div>
           <h3>Ranger</h3>
           <p>
@@ -52,7 +53,7 @@
       </a>
     </div>
     <div class="action"></div>
-    <div class="vs"></div>
+    <div class="arena"></div>
     <div class="enemy"></div>
   </body>
 </html>
