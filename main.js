@@ -10,6 +10,7 @@ let GameManager = {
 setGameStart: function(classType) {
 this.resetPlayer(classType);
 this.setPreFight(classType);
+//Pick player
 },
 resetPlayer: function(classType) {
 switch (classType) {
@@ -26,6 +27,7 @@ switch (classType) {
         player = new Player(classType, 500, 70, 100, 300, 50);
         break;
 }
+//Player interface
     let getInterface = document.querySelector(".player");
     getInterface.innerHTML = '<img src="img/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType + '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Dexterity: ' + player.dexterity + '</p><p>Intelligence: ' + player.intelligence + '</p></div>';
 },
