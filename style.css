@@ -6,21 +6,23 @@
     border: none;
     cursor: pointer;
     margin: 5px;
+    border-radius: 20%;
   }
 
   img {
     width: 150px;
     height: 150px;
+    border-radius: 20%;
   }
   
   * {
     margin: 0;
-    padding: 0;
+    padding: 1px;
     text-decoration: none;
   }
   
   body {
-      padding: 10px;
+      padding: 1px;
       margin: 10px;
     background-color: #1b1b1b;
   }
@@ -76,6 +78,7 @@
     width: 220px;
     padding: 0 10px 0 20px;
     background-color: #5f0000;
+    border-radius: 15%;
   }
   
   .interface a:hover div {
@@ -97,23 +100,24 @@
   }
   
   .btn-prefight {
-    width: 100% !important;
+    width: 410px;
     display: flex;
     justify-content: center;
     background-color: #e64747;
-
+    border-radius: 50%;
   }
   
-  .actions {
+  .action {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   
   .arena {
     width: 100%;
     height: 180px;
-    background-color: #000000;
+    background-color: #1b1b1b;
     background-image: url("img/vs.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -144,6 +148,7 @@
     width: 220px;
     padding: 0 10px 0 20px;
     background-color: #5f0000;
+    border-radius: 15%;
   }
   
   .enemy h3 {
