@@ -1,3 +1,4 @@
+//Name input
 function changeTitle() {
     let newTitle = prompt("What's your name?");
     let titleElement = document.getElementById("title");
@@ -31,6 +32,8 @@ switch (classType) {
     let getInterface = document.querySelector(".interface");
     getInterface.innerHTML = '<img src="img/' + classType.toLowerCase() + '.jpg" class="img-avatar"><div><h3>' + classType + '</h3><p>Health: ' + player.health + '</p><p>Mana: ' + player.mana + '</p><p>Strength: ' + player.strength + '</p><p>Dexterity: ' + player.dexterity + '</p><p>Intelligence: ' + player.intelligence + '</p></div>';
 },
+
+//Action button
 setPreFight: function() {
     let getHeader = document.querySelector(".header");
     let getAction = document.querySelector(".action");
@@ -43,7 +46,7 @@ setFight: function() {
     let getHeader = document.querySelector(".header");
     let getAction = document.querySelector(".action");
     let getEnemy = document.querySelector(".enemy");
-    // Create enemy
+// Create enemy
     let enemy1 = new Enemy("Monster", 100, 0, 20, 20, 20);
     let enemy2 = new Enemy("Necromancer", 200, 0, 20, 20, 20);
     let chooseRandomEnemy = Math.floor(Math.random() * Math.floor(2));
@@ -63,6 +66,7 @@ setFight: function() {
 }
 }
 
+//Restart alert
 function myAlert() {
     alert("You hit hard Exile! You won the fight! to fight again refresh your browser!");
 }
